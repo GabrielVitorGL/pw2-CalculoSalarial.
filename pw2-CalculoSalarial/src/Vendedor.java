@@ -1,8 +1,6 @@
 
-public class Gerente extends Funcionario {
-
-	private double gratificacao;
-	
+public class Vendedor extends Funcionario {
+		private double valorComissao;
 	public void listarFuncionario() {
 		System.out.println("CPF: " + getCpf());
 		System.out.println("Nome: " + getNome());
@@ -10,11 +8,11 @@ public class Gerente extends Funcionario {
 		System.out.println("Salario Final: " + getSalarioFinal());
 		System.out.println("Bonificação: " + getValorBonificacao());
 	}
-	public void calcularSalarioFinal(double gratificacao) {
-		this.gratificacao = gratificacao;
-		setSalarioFinal(gratificacao + getSalarioBase()+ getValorBonificacao());
+	public void calcularSalarioFinal(double valorComissao) {
+		this.valorComissao = valorComissao;
+		setSalarioFinal(valorComissao + getSalarioBase()+ getValorBonificacao());
 	}
 	public String apresentarSalario() {
-		return getNome() + getSalarioBase() + getValorBonificacao() + gratificacao + getSalarioFinal();
+		return getNome() + getSalarioBase() + getValorBonificacao() + valorComissao + getSalarioFinal();
 	}
 }
