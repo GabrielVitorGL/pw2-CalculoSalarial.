@@ -15,7 +15,7 @@ public abstract class Funcionario {
 		this.salarioFinal = 0;
 		this.valorBonificacao = 0;
 	}
-	public abstract void listarFuncionario();
+	public abstract String listarFuncionario();
 	
 	public abstract void calcularSalarioFinal(double valor);
 	

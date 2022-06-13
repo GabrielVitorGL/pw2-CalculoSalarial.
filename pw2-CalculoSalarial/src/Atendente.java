@@ -1,12 +1,8 @@
 
 public class Atendente extends Funcionario {
 	private double adcionalNoturno;
-	public void listarFuncionario() {
-		System.out.println("CPF: " + getCpf());
-		System.out.println("Nome: " + getNome());
-		System.out.println("Salario Base: " + getSalarioBase());
-		System.out.println("Salario Final: " + getSalarioFinal());
-		System.out.println("Bonificação: " + getValorBonificacao());
+	public String listarFuncionario() {
+		return "CPF: " + getCpf() + "Nome: " + getNome() + "\nSalario Base: " + getSalarioBase() + "\nSalario Final: " + getSalarioFinal() + "\nBonificação: " + getValorBonificacao();
 	}
 	public void calcularSalarioFinal(double adcionalNoturno) {
 		this.adcionalNoturno = adcionalNoturno;
